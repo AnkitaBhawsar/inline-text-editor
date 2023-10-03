@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Inline Editing</title>
+</head>
+<body>
+  <div id="editableText" class="editable" ondblclick="enableEdit(this)">
+    <p>Wow Lara, that sounds super cool, Ah? can you share with us all the cool features inside this platform?</p>
+    <p>Sure, I have been recording with Riverside for almost a year and everything is working so great. I have 4K videos and separate track of video and audio for each guest. Amazing!</p>
+  </div><br>
+  <input type="text" id="editInput" class="hidden">
+  <button id="saveButton" class="hidden" onclick="saveChanges()">Save</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
